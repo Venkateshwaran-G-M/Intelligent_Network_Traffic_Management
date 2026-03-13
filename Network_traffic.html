@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Intelligent Network Traffic Management System</title>
+    <link rel="stylesheet" href="network_traffic.css">
+</head>
+<body>
+    <header class="packet-capture">
+        <button class="capture">Capture Traffic</button>
+        <button class="stop">Stop Capture</button>
+    </header>
+    <h1>Intelligent Network Traffic Management System</h1>
+
+    <section class="intro">
+        <h2>Introduction</h2>
+        <p>The Intelligent Network Traffic Management System is a project designed to monitor and manage network traffic efficiently. It utilizes advanced algorithms and machine learning techniques to analyze network data in real-time, identify potential issues, and optimize traffic flow. The system aims to enhance network performance, reduce latency, and improve overall user experience by intelligently managing network resources. (It can be used in various environments, including corporate networks, data centers, and service provider networks, to ensure smooth and reliable network operations. </p>
+    </section>
+
+    
+
+    <section class="traffic-data">
+        <h2>Captured Traffic Data</h2>
+        <div></div>
+        <div class="filter">
+            <label for="protocol-filter">Filter by Protocol:</label>
+            <select id="protocol-filter">
+                <option value="all">All</option>
+                <option value="tcp">TCP</option>
+                <option value="udp">UDP</option>
+                <option value="icmp">ICMP</option>
+            </select>
+        </div>
+        <section class="log">
+            <h2>Captured Packets</h2>
+            <h3 id="Protocol">Protocol:</h3>
+            <div id="log" class="protocol-display"></div> <br>
+            <h3 id="Source">Source:</h3>
+            <div id="log" class="source-display"></div> <br>
+            <h3 id="Destination">Destination:</h3>
+            <div id="log" class="destination-display"></div> <br>
+            <h3 id="Size">Size:</h3>
+            <div id="log" class="size-display"></div> <br>
+            <h3 id="Timestamp">Timestamp:</h3> 
+            <div id="log" class="timestamp-display"></div><br>
+            <h3 id="payload">Payload:</h3>
+            <div id="log" class="payload-display"></div> <br>
+        </section>
+    </section>
+
+</body>
